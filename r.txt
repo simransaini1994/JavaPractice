@@ -1,0 +1,90 @@
+import java.util.Scanner;
+class Employee
+{
+ int empId;
+ String empName;
+ int total_leaves;
+ double total_salary;
+  boolean flag=true;
+  int deduction=0;
+ void calculate_balance_leaves();
+ boolean avail_leave(int no_of_leaves,char type_of_leave);
+ void calculate_salary();
+}
+
+class PermanentEmp extends Employee
+{
+  int paid_leave,sick_leave,casual_leave;
+  double basic,hra,pfa;
+  void print_leave_details()
+  {
+  
+}
+void calculate_balance_leaves()
+{}
+boolean avail_leaves(int no_of_leaves,char type_of_leave)
+{
+ if()
+}
+void calculate_salary()
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter basic salary of employee")
+double basic=s.nextDouble();
+double pf=12/100*basic;
+double hra=50/100*basic
+total_salary=basic+hra-pf-deduction;
+}
+ class TemporaryEmp
+ int leave=5;
+
+ 
+ void calculate_balance_leaves(int no_of_leaves)
+ {
+   leave=5-no_of_leaves;
+ System.out.println("leaves left="+leave);
+   
+  }
+ boolean avail_leave(int no_of_leaves,char type_of_leave)
+{ 
+ int i=0
+ if(no_of_leaves<5&&type_of_leave='c')
+  flag==true;
+   else
+   i=no_of_leaves-5;
+   deduction=200*i;
+  flag==false;
+ if(flag==true)
+ { 
+  return(true)
+}
+else 
+{
+ return(false)
+}
+ void calculate_salary()
+{
+ Scanner s=new Scanner(System.in);
+ System.out.println("enter basic salary of employee")
+ double basic=s.nextDouble();
+ total_salary=basic-deduction;
+}
+
+class A
+{
+public static void main(String arg[])
+{
+  Scanner s=new Scanner(System.in)
+  System.out.println("enter no of leaves");
+  int n=s.nextInt();
+  System.out.println("type of leave");
+  char a=s.nextLine();
+  TemporaryEmp t=new TemporaryEmp
+  t.calculate_balance_leaves(n);
+  t.avail_leave(n,a);
+}
+}
+  
+
+
+  

@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ *
+ * @author Simran
+ */
+public class ReadToHashmap {
+    public static void main(String[] args) throws Exception {
+        Map<String, String> map = new HashMap<String, String>();
+        BufferedReader in;
+        in = new BufferedReader(new FileReader("C:/simran/simran.txt"));
+        String line = "";
+        while ((line = in.readLine()) != null) {
+            String parts[] = line.split("\\s");
+      
+            map.put(parts[0],parts[1]+" "+parts[2]);
+        }
+        in.close();
+        System.out.println(map.toString());
+    }
+}
